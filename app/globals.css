@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --blue: #04385d;
+  --white: #fffdf1;
+  --cream: #fbf6e0;
+  --gold: #d1ae54;
+  --gray: #ccc6b8;
+  --burgundy: #8b123b;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--white);
+    color: var(--blue);
+  }
+
+  h1,
+  h2 {
+    font-family: "Times New Roman", Times, serif;
+  }
+}
